@@ -1,0 +1,102 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar with full gold color -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gold"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Rest of the layout -->
+    <ImageView
+        android:id="@+id/goldBarImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/gold_bar" />
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Weight of Gold (g)" />
+
+    <EditText
+        android:id="@+id/goldValueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Current Gold Value (RM/g)" />
+
+    <RadioGroup
+        android:id="@+id/typeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/keepGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep" />
+        <RadioButton
+            android:id="@+id/wearGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gold"
+        android:text="Calculate"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/labelTotalGoldValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total gold value:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/totalGoldValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 00.00"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/labelZakatPayableValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold value that is zakat payable:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/zakatPayableValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 00.00"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/labelTotalZakat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total zakat:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/totalZakat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 00.00"
+        android:textColor="#000000" />
+</LinearLayout>

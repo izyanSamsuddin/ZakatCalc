@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FFD700</color>
+    <color name="accentColor">#FFB400</color>
+    <color name="backgroundColor">#FFF8E7</color>
+    <color name="gold">#FFD700</color>
+</resources>

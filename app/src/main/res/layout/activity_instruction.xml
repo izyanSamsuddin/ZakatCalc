@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar with gold color and centered title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gold"
+        android:title="Instruction"
+        android:titleTextColor="#000000"
+        android:navigationIcon="@android:drawable/ic_menu_revert"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to Use ZakatCalc"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Enter the weight of the gold in grams.\n\n"
+        android:paddingBottom="8dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Select the type of gold (Keep/Wear).\n\n"
+        android:paddingBottom="8dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Enter the current gold price (RM per gram).\n\n"
+        android:paddingBottom="8dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Tap 'Calculate' to view the Zakat amount payable."
+        android:paddingBottom="8dp"
+        android:textColor="#000000" />
+</LinearLayout>

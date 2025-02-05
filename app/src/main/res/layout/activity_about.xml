@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Toolbar with gold color and black title/icon -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gold"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:title="About"
+        android:titleTextColor="#000000"
+        android:navigationIconTint="#000000"
+        android:navigationIcon="@android:drawable/ic_menu_revert"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/passportPhoto"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/my_passport"
+        android:contentDescription="Passport Photo" />
+
+    <TextView
+        android:id="@+id/studentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Name: Farah Izyan Samsuddin\nID: 2023248282\nCourse: CDCS240"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+</LinearLayout>
